@@ -13,7 +13,7 @@
 		52D39AB51A9FFC230074317D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52D39AB41A9FFC230074317D /* Images.xcassets */; };
 		52D39AB81A9FFC230074317D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52D39AB61A9FFC230074317D /* LaunchScreen.xib */; };
 		52D39AC41A9FFC230074317D /* week3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D39AC31A9FFC230074317D /* week3Tests.swift */; };
-		52D39ACF1AA00DD40074317D /* launch in Resources */ = {isa = PBXBuildFile; fileRef = 52D39ACE1AA00DD40074317D /* launch */; };
+		52D39ACF1AA00DD40074317D /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 52D39ACE1AA00DD40074317D /* launch.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,7 @@
 		52D39ABD1A9FFC230074317D /* week3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = week3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D39AC21A9FFC230074317D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52D39AC31A9FFC230074317D /* week3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = week3Tests.swift; sourceTree = "<group>"; };
-		52D39ACE1AA00DD40074317D /* launch */ = {isa = PBXFileReference; lastKnownFileType = file; name = launch; path = ../../../Vault/Photos/SpaceX/launch; sourceTree = "<group>"; };
+		52D39ACE1AA00DD40074317D /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = launch.png; path = ../../../Vault/Photos/SpaceX/launch.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +79,7 @@
 		52D39AAA1A9FFC230074317D /* week3 */ = {
 			isa = PBXGroup;
 			children = (
-				52D39ACE1AA00DD40074317D /* launch */,
+				52D39ACE1AA00DD40074317D /* launch.png */,
 				52D39AAD1A9FFC230074317D /* AppDelegate.swift */,
 				52D39AAF1A9FFC230074317D /* ViewController.swift */,
 				52D39AB11A9FFC230074317D /* Main.storyboard */,
@@ -198,7 +198,7 @@
 				52D39AB31A9FFC230074317D /* Main.storyboard in Resources */,
 				52D39AB81A9FFC230074317D /* LaunchScreen.xib in Resources */,
 				52D39AB51A9FFC230074317D /* Images.xcassets in Resources */,
-				52D39ACF1AA00DD40074317D /* launch in Resources */,
+				52D39ACF1AA00DD40074317D /* launch.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
