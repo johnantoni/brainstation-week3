@@ -40,14 +40,23 @@ class ViewController: UIViewController {
         super.viewDidAppear(animated)
         // ....
     }
+
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+    }
     
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        // ...
+    }
+    
+    func buttonTapped(sender: UIButton?) {
+        self.view.backgroundColor = UIColor.yellowColor()
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-
-    func buttonTapped(sender: UIButton?) {
-        self.view.backgroundColor = UIColor.yellowColor()
     }
 
 }
