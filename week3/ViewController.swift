@@ -29,6 +29,13 @@ class ViewController: UIViewController {
                         // action = simply the function we want to run
                         // forcontrolevents = the event that has to occur for the function to be executed
         button.addTarget(self, action: "buttonTapped:", forControlEvents: UIControlEvents.TouchUpInside)
+        
+        var image = UIImage(named: "launch")
+        let imageView = UIImageView(image: image)
+        imageView.frame = CGRect(x: 50, y: 200, width: 300, height: 300)
+        imageView.backgroundColor = UIColor.blueColor()
+        self.view.addSubview(imageView)
+        
     }
 
     override func viewWillAppear(animated: Bool) {
