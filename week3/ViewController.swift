@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
         var view = UIView(frame: CGRect(x: 20, y: 20, width: 20, height: 20))
         view.backgroundColor = UIColor.magentaColor()
@@ -24,19 +25,25 @@ class ViewController: UIViewController {
         button.setTitleColor(UIColor.redColor(), forState: UIControlState.Normal)
         button.frame = CGRect(x: 100, y: 100, width: 200, height: 50)
         self.view.addSubview(button)
-      
                         // target = self (the button) 
                         // action = simply the function we want to run
                         // forcontrolevents = the event that has to occur for the function to be executed
+
         button.addTarget(self, action: "buttonTapped:", forControlEvents: UIControlEvents.TouchUpInside)
         
-        var image = UIImage(named: "launch")
+        var image = UIImage(named: "launch") // file extension not needed
         let imageView = UIImageView(image: image)
+        
+        // images take space in memory only when they are loaded
+        // you can clear it by setting the image property to nil
+        // until you delete the image view
+        
         imageView.frame = CGRect(x: 0, y: self.view.bounds.height / 2, width: self.view.bounds.width, height: 300)
         imageView.contentMode = UIViewContentMode.ScaleAspectFit
         imageView.backgroundColor = UIColor.blueColor()
-        self.view.addSubview(imageView)
+        imageView.clipsToBounds = true // clip image so does not bleed outside view
         
+        self.view.addSubview(imageView)
     }
 
     override func viewWillAppear(animated: Bool) {
